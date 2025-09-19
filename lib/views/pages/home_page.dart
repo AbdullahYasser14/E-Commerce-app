@@ -1,4 +1,6 @@
+import 'package:ecommerce_app/utilities/asset_app.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -6,8 +8,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text("home page", style: Theme.of(context).textTheme.labelLarge),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: SingleChildScrollView(child: Column(children: [
+              
+              ],
+            )),
+        ),
       ),
     );
   }

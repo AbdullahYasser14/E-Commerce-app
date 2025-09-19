@@ -31,26 +31,34 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
         tabs: [
           PersistentTabConfig(
             screen: const HomePage(),
-            item: ItemConfig(icon: const Icon(Icons.home), title: "Home"),
+            item: ItemConfig(
+              activeForegroundColor: Colors.blue,
+              icon: const Icon(Icons.home),
+              inactiveIcon: const Icon(Icons.home_outlined),
+              title: "Home",
+            ),
           ),
           PersistentTabConfig(
             screen: const CartPage(),
             item: ItemConfig(
-              icon: const Icon(Icons.shopping_cart_outlined),
-              title: "Messages",
+              inactiveIcon: const Icon(Icons.shopping_bag_outlined),
+              icon: const Icon(Icons.shopping_bag),
+              title: "Cart",
             ),
           ),
           PersistentTabConfig(
             screen: const FavoritePage(),
             item: ItemConfig(
-              icon: const Icon(Icons.favorite_border),
+              inactiveIcon: const Icon(Icons.favorite_border_outlined),
+              icon: const Icon(Icons.favorite),
               title: "Settings",
             ),
           ),
           PersistentTabConfig(
             screen: const ProfilePage(),
             item: ItemConfig(
-              icon: const Icon(Icons.person_2_outlined),
+              icon: const Icon(Icons.person_2),
+              inactiveIcon: const Icon(Icons.person_2_outlined),
               title: "Settings",
             ),
           ),
